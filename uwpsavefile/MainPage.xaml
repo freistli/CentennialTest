@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="uwpsavefile.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:uwpsavefile"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="SavetoLocal" Content="Save to Local" HorizontalAlignment="Left" Margin="76,76,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoLocal_Click"/>
+        <TextBox x:Name="Status" HorizontalAlignment="Left" Margin="323,76,0,0" TextWrapping="Wrap" Text="" Width="416" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" Height="194" VerticalAlignment="Top"/>
+        <Button x:Name="SavetoRoaming" Content="Save to Roaming" HorizontalAlignment="Left" Margin="76,127,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoRoaming_Click"/>
+        <Button x:Name="SavetoLocalCache" Content="Save to LocalCache" HorizontalAlignment="Left" Margin="76,182,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoLocalCache_Click"/>
+        <Button x:Name="SavetoTemporary" Content="Save to Temporary" HorizontalAlignment="Left" Margin="76,242,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoTemporary_Click"/>
+        <Button x:Name="SavetoSharedLocalFolder" Content="Save to Shared Local Folder" HorizontalAlignment="Left" Margin="76,302,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoSharedLocalFolder_Click"/>
+        <Button x:Name="SavetoDrive" Content="Save to Drive" HorizontalAlignment="Left" Margin="76,363,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoDrive_Click"/>
+        <Button x:Name="SavetoDocuments" Content="Save to Documents" HorizontalAlignment="Left" Margin="76,423,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoDocuments_Click" />
+        <Button x:Name="SavetoPublisherCacheFolder" Content="Save to Publisher Cache" HorizontalAlignment="Left" Margin="323,423,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoPublisherCacheFolder_Click"  />
+        <Button x:Name="SavetoCredential" Content="Save to Credential" HorizontalAlignment="Left" Margin="323,363,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="SavetoCredential_Click"  />
+        <Button x:Name="OpenFilePicker" Content="Pick Up File" HorizontalAlignment="Left" Margin="323,308,0,0" VerticalAlignment="Top" Height="28" Width="202" Click="OpenFilePicker_Click" />
+
+    </Grid>
+</Page>
