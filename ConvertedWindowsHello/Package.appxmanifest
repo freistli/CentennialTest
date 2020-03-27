@@ -8,14 +8,14 @@
   IgnorableNamespaces="uap mp rescap">
 
   <Identity
-    Name="2279e77c-3883-4220-a5fc-3089e25dd870"
+    Name="ConvertedWindowsHello"
     Publisher="CN=freistli"
-    Version="1.0.3.0" />
+    Version="1.0.0.0" />
 
   <Properties>
-    <DisplayName>WinFormPackage</DisplayName>
+    <DisplayName>ConvertedWindowsHello</DisplayName>
     <PublisherDisplayName>freistli</PublisherDisplayName>
-    <Logo>Images\StoreLogo.png</Logo>
+    <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
@@ -32,13 +32,13 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="WInFormPackage"
-        Description="WapProjTemplate3"
+        DisplayName="ConvertedWindowsHello"
+        Description="ConvertedWindowsHello"
         BackgroundColor="transparent"
-        Square150x150Logo="Images\Square150x150Logo.png"
-        Square44x44Logo="Images\Square44x44Logo.png">
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png">
         <uap:DefaultTile
-          Wide310x150Logo="Images\Wide310x150Logo.png" />
+          Wide310x150Logo="Assets\Wide310x150Logo.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
@@ -46,6 +46,5 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <rescap:Capability Name="runFullTrust" />
-    <DeviceCapability Name="location"/>
   </Capabilities>
 </Package>
